@@ -1,6 +1,7 @@
 import {ReactComponent as Ellipse} from "./Ellipse.svg"
 import {ReactComponent as Ellipse2} from "./Ellipse2.svg"
 import {ReactComponent as Ellipse3} from "./Ellipse3.svg"
+import {ReactComponent as Ellipse4} from "./Ellipse4.svg"
 import {ReactComponent as Call} from "./call.svg"
 
 const DoctorsContent = ({doctorName, specialist, image}) => {
@@ -9,10 +10,12 @@ const DoctorsContent = ({doctorName, specialist, image}) => {
         <div>
             <Ellipse className="absolute -top-24 left-0 z-0" />
             <Ellipse2 className="absolute bottom-0 right-0 z-0" />
-            <Ellipse3 className=" left-2/4 top-32 " />
             <div className="flex justify-between absolute left-2/4 z-0">
                 <Ellipse3 className="mt-9" />
-                <Ellipse3 className="w-10 ml-12" />
+                <div>
+                    <Ellipse3 className="w-10 ml-12" />
+                    <Ellipse4 className="absolute w-16 ml-10 left-2/4 top-32 " />
+                </div>
             </div>
             
             <div className="z-10 relative" >
